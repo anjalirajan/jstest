@@ -32,7 +32,7 @@
            
         }
         catch {
-            console.error("++++++++++++++++++++++++ navigator is not supported;");
+            console.error("++++++++++++++++++++++++ navigator.mediaDevices.getUserMedia is not supported;");
         }
         
         function handleSuccess() {
