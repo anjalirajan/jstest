@@ -28,6 +28,18 @@
         catch {
             console.error("++++++++++++++++++++++++ catch-0 navigator is not supported;");
         }
+        
+        try {
+            if (navigator.mediaDevices === undefined) {
+                 console.error("++++++++++++++++++++++++ catch-0 navigator.mediaDevices is undefined;");
+            }
+            else
+               console.error("++++++++++++++++++++++++ catch-0 navigator.mediaDevices is defined;");   
+        }
+        catch {
+            console.error("++++++++++++++++++++++++ catch-1 navigator.mediaDevices is not supported;");
+        }
+        
         try {
             const constraints = {
                 audio: true,
@@ -37,7 +49,7 @@
            
         }
         catch {
-            console.error("++++++++++++++++++++++++ catch-1 navigator.mediaDevices.getUserMedia is not supported;");
+            console.error("++++++++++++++++++++++++ catch-2 navigator.mediaDevices.getUserMedia is not supported;");
         }
         
         function handleSuccess() {
@@ -57,7 +69,7 @@
         }
         
         catch {
-            console.error("-------------------------------- catch -2navigator.getUserMedia is not supported;");
+            console.error("++++++++++++++++++++++++++++++++++ catch-3 navigator.getUserMedia is not supported;");
         }
                  
         function handleSuccess1() {
