@@ -11,6 +11,7 @@
             navigatorObject = window.navigator
             var appName = navigatorObject.appName;
             console.error("******************* Application name : ",appName);
+            console.error("******************* Application name : ",navigator.appName);
         }
         catch {
             console.error("++++++++++++++++++++++++ navigator is not supported;");
