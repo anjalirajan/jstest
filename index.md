@@ -52,7 +52,7 @@
         }
         
         catch {
-            console.error("++++++++++++++++++++++++ navigator.getUserMedia is not supported;");
+            console.error("-------------------------------- navigator.getUserMedia is not supported;");
         }
                  
         function handleSuccess1() {
