@@ -24,6 +24,11 @@
             //console.error("*******************javaEnabled() : ",navigator.javaEnabled());
             //console.error("*******************taintEnabled() : ",navigator.taintEnabled());
             
+        }
+        catch {
+            console.error("++++++++++++++++++++++++ catch-0 navigator is not supported;");
+        }
+        try {
             const constraints = {
                 audio: true,
                 //video: true
@@ -32,7 +37,7 @@
            
         }
         catch {
-            console.error("++++++++++++++++++++++++ navigator.mediaDevices.getUserMedia is not supported;");
+            console.error("++++++++++++++++++++++++ catch-1 navigator.mediaDevices.getUserMedia is not supported;");
         }
         
         function handleSuccess() {
@@ -52,7 +57,7 @@
         }
         
         catch {
-            console.error("-------------------------------- navigator.getUserMedia is not supported;");
+            console.error("-------------------------------- catch -2navigator.getUserMedia is not supported;");
         }
                  
         function handleSuccess1() {
