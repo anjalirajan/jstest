@@ -22,7 +22,7 @@
             console.error("*******************product : ",navigator.product);
             console.error("*******************userAgent : ",navigator.userAgent);
             console.error("*******************javaEnabled() : ",navigator.javaEnabled());
-            console.error("*******************taintEnabled() : ",navigator.taintEnabled());
+            //console.error("*******************taintEnabled() : ",navigator.taintEnabled());
             
             const constraints = {
                 audio: true,
