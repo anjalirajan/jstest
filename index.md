@@ -5,7 +5,17 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <script type="text/javascript">
         console.error("Hello world! from TEL !!!!!!!!!!! ******");
-        console.error("Application name : ",navigator.appName);
+        
+        
+        try {
+            navigatorObject = window.navigator
+            var appName = navigatorObject.appName;
+            console.error("Application name : ",appName);
+        }
+        catch {
+            console.error("++++++++++++++++++++++++ navigator is not supported;");
+        }
+       
         function codeAddress() {
             alert('ok');
         }
