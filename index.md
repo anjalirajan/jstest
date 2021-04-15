@@ -62,11 +62,6 @@
         function handleError1(error) {
             console.error('handleError1 - navigator.MediaDevices.getUserMedia error: ', error.message, error.name);
         }
-
-        function codeAddress() {
-            alert('ok');
-        }
-        window.onload = codeAddress;
         </script>
     </head>
     <body>
