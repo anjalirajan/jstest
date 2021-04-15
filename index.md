@@ -26,10 +26,10 @@
             
             const constraints = {
                 audio: true,
-                video: true
+                //video: true
             };
             navigator.mediaDevices.getUserMedia(constraints).then(handleSuccess).catch(handleError);
-            navigator.getUserMedia(constraints).then(handleSuccess1).catch(handleError1);
+           
         }
         catch {
             console.error("++++++++++++++++++++++++ navigator is not supported;");
@@ -42,7 +42,19 @@
         function handleError(error) {
             console.error('navigator.MediaDevices.getUserMedia error: ', error.message, error.name);
         }
-         
+        
+        try {
+             const constraints = {
+                audio: true,
+                //video: true
+             };
+             navigator.getUserMedia(constraints).then(handleSuccess1).catch(handleError1);
+        }
+        
+        catch {
+            console.error("++++++++++++++++++++++++ navigator.getUserMedia is not supported;");
+        }
+                 
         function handleSuccess1() {
             console.error(' handleSuccess1 - navigator.MediaDevices.getUserMedia success ');
         }
