@@ -11,17 +11,17 @@
             navigatorObject = window.navigator
             var appName = navigatorObject.appName;
             console.error("******************* Application name : ",appName);
-            /*console.error("******************* Application name : ",navigator.appName);
-            console.error("******************* appCodeName : ",navigator.appCodeName); 
-            console.error("*******************appVersion : ",navigator.appVersion);
-            console.error("*******************cookieEnabled : ",navigator.cookieEnabled);
-            console.error("******************* geolocation : ",navigator.geolocation);
-            console.error("*******************language : ",navigator.language);
-            console.error("*******************onLine : ",navigator.onLine);
-            console.error("*******************platform : ",navigator.platform);
-            console.error("*******************product : ",navigator.product);
-            console.error("*******************userAgent : ",navigator.userAgent);
-            console.error("*******************javaEnabled() : ",navigator.javaEnabled()); */
+            //console.error("******************* Application name : ",navigator.appName);
+            //console.error("******************* appCodeName : ",navigator.appCodeName); 
+            //console.error("*******************appVersion : ",navigator.appVersion);
+            //console.error("*******************cookieEnabled : ",navigator.cookieEnabled);
+            //console.error("******************* geolocation : ",navigator.geolocation);
+            //console.error("*******************language : ",navigator.language);
+            //console.error("*******************onLine : ",navigator.onLine);
+            //console.error("*******************platform : ",navigator.platform);
+            //console.error("*******************product : ",navigator.product);
+            //console.error("*******************userAgent : ",navigator.userAgent);
+            //console.error("*******************javaEnabled() : ",navigator.javaEnabled());
             //console.error("*******************taintEnabled() : ",navigator.taintEnabled());
             
             const constraints = {
