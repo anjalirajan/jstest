@@ -5,8 +5,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <script type="text/javascript">
         console.error("-----------------------Hello world! from TEL !!!!!!!!!!! ******");
-        
-        
+                
         try {
             navigatorObject = window.navigator
             var appName = navigatorObject.appName;
@@ -34,7 +33,8 @@
                  console.error("++++++++++++++++++++++++ navigator.mediaDevices is undefined;");
             }
             else
-               console.error("++++++++++++++++++++++++ navigator.mediaDevices is defined;");   
+               console.error("++++++++++++++++++++++++ navigator.mediaDevices is defined;");  
+            console.log(JSON.stringify(navigator.mediaDevices.getSupportedConstraints()));
         }
         catch {
             console.error("++++++++++++++++++++++++ catch-1 navigator.mediaDevices is not supported;");
