@@ -61,17 +61,17 @@
             console.error('navigator.MediaDevices.getUserMedia error: ', error.message, error.name);
         }
         
-        try {
-             const constraints = {
-                audio: true,
-                //video: true
-             };
-             navigator.getUserMedia(constraints).then(handleSuccess1).catch(handleError1);
-        }
+//        try {
+ //            const constraints = {
+  //              audio: true,
+  //              //video: true
+  //           };
+   //          navigator.getUserMedia(constraints).then(handleSuccess1).catch(handleError1);
+   //     }
         
-        catch {
-            console.error("++++++++++++++++++++++++++++++++++ catch-3 navigator.getUserMedia is not supported;");
-        }
+   //     catch {
+    //        console.error("++++++++++++++++++++++++++++++++++ catch-3 navigator.getUserMedia is not supported;");
+     //   }
                  
         function handleSuccess1() {
             console.error(' handleSuccess1 - navigator.MediaDevices.getUserMedia success ');
